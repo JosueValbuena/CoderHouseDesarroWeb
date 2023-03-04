@@ -1,0 +1,169 @@
+html *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hero */
+
+.hero-img{
+    width: 100%;
+    height: 35vh;
+    background-image: url("../img/hero.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Body */
+
+.container-fluid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1fr;
+    grid-template-areas:"main   main   main   aside"
+                        "footer footer footer footer"
+}
+
+main{
+    grid-area: main;
+    padding: 2rem 0;
+    transition: 1s;
+}
+
+main .row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Index page */
+
+.card{
+    transition: 0.5s;
+    margin-bottom: 0.75rem;
+}
+
+.card:hover{
+    scale: 1.05;
+}
+
+/* Contact page */
+
+.row-contacto{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.mapas{
+    width: 30rem;
+}
+
+.mapas iframe{
+    width: 
+    100%;
+}
+
+.contacto-mainCoupon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: green;
+    animation: to-alert 2s ease infinite;
+    margin-top: 1rem;
+}
+
+@keyframes to-alert {
+    0% {
+        color: green;
+    }
+    50%{
+        color: red;
+    }
+    100%{
+        color: green;
+    }
+}
+
+/* Aside */
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    border-left: 1px solid red;
+}
+
+.news-card{
+    width: 15rem;
+    border: 1px solid black;
+    margin: 0.5rem 0;
+    transition: 1s;
+}
+
+.news-card:hover{
+    scale: 1.05;
+}
+
+.news-card-img img{
+    width: 100%;
+}
+
+/* Footer */
+
+footer{
+    grid-area: footer;
+    border-top: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.footer-socialMedia{
+    transition: 0.5s;
+}
+
+.footer-socialMedia:hover{
+    transform: translateY(-3px);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container-fluid{
+    grid-template-columns: 2fr;
+    grid-template-areas: "main main main"
+                         "aside aside aside"
+                         "footer footer footer"
+    ;
+  }
+
+  aside{
+    border-top: 1px solid red;
+    border-left: none;
+  }
+}
+
+@media (max-width: 576px) {
+  
+    .container-fluid{
+        padding: 0 15px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "main"
+                             "aside"
+                             "footer";
+    }
+  
+    aside{
+    border-top: 1px solid red;
+  }
+
+}
