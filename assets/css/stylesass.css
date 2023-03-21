@@ -47,6 +47,21 @@ html a:hover {
   border: 5px solid #dc3545;
 }
 
+.main-perifericos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 10rem;
+}
+.main-perifericos .card {
+  width: 25rem;
+}
+.main-perifericos .card:hover {
+  transform: scale(1.01);
+}
+
 .hero-img {
   width: 100%;
   height: 50vh;

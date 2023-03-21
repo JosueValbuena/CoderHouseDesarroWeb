@@ -1,0 +1,15 @@
+.main-perifericos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 10rem;
+    .card{
+        width:25rem;
+
+        &:hover{
+            transform: scale(1.010);
+        }
+    }
+}
