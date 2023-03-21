@@ -1,0 +1,71 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html *, html *:before, html *:after {
+  box-sizing: inherit;
+}
+html a {
+  text-decoration: none;
+}
+html a:hover {
+  text-decoration: underline;
+}
+
+.index-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0;
+}
+.index-section img {
+  width: 35rem;
+  height: 30rem;
+}
+
+.index-section-dark {
+  background-color: #dc3545;
+}
+.index-section-dark a {
+  color: #e3e4db;
+}
+.index-section-dark img:hover {
+  border: 5px solid #e3e4db;
+}
+
+.index-section-light {
+  background-color: #e3e4db;
+}
+.index-section-light a {
+  color: #dc3545;
+}
+.index-section-light img:hover {
+  border: 5px solid #dc3545;
+}
+
+.hero-img {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../../assets/img/hero.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  background-color: #dc3545;
+  padding: 0.5rem 0;
+  color: #e3e4db;
+}
+footer * {
+  padding-right: 1rem;
+}/*# sourceMappingURL=stylesass.css.map */

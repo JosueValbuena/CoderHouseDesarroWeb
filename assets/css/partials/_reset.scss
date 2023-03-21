@@ -1,0 +1,19 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    *, *:before, *:after {
+        box-sizing: inherit;  
+    }
+
+    a{
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+  

@@ -1,0 +1,168 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* a{
+  text-decoration: none;
+}
+
+* a:hover{
+  text-decoration: underline;
+}
+
+/* header */
+
+#hero-img{
+    width: 100%;
+    height: 30vh;
+    background-image: url("../img/hero.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Nav menu */
+
+.nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #3B252C;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    color: #e3e4db;
+}
+
+nav a{
+    text-decoration: none;
+    color: #e3e4db;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.nav-menu li{
+    padding-left: 2rem;
+}
+
+.nav-menu li:hover{
+  scale: 1.2;  
+  text-decoration: underline;
+}
+
+/* Body */
+
+.index-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.index-section *{
+  padding: 0 1rem 0 1rem;
+}
+
+.index-section-light{
+ background-color: #e3e4db;
+ color: #453750;
+}
+
+.index-section-dark, .index-section-dark a {
+  background-color: #453750;
+  color: #e3e4db;
+}
+
+.section-img{
+  width: 45rem;
+  height: 30rem;
+  border: solid 0.5rem #3B252C;
+  padding: 0;
+}
+.section-img:hover{
+  border: solid 0.5rem #e3e4db;
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  flex-direction: row;
+  color: #e3e4db;
+  background-color: #3B252C;
+  padding: 0.5rem 0;
+}
+
+footer *{
+  padding-right: 2rem;
+}
+
+/* Contacto */
+
+.div-contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.div-contacto div{
+  display: flex;
+}
+
+.div-contacto div *{
+  padding: 0 0.5rem;
+}
+
+.div-form{
+  padding: 5rem 0;
+  background-color: #453750;
+  display: flex;
+  justify-content: center;
+  color: #e3e4db;
+}
+.div-form form{
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+.div-form form *{
+  padding: 0.5rem 0;
+}
+
+/* Sections */
+.section-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 15rem;
+}
+
+.card{
+  padding: 0;
+  margin: 3rem;
+  color: #453750;
+  border: solid 0.25rem #3B252C;
+}
+
+.img-card{
+  width: 25rem;
+  height: 20rem;
+}
+
+.card-text-div{
+  padding-left: 0.5rem;
+}

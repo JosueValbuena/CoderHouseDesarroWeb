@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    background-color: $bg-dark;
+    padding: 0.5rem 0;
+    color: $bg-light;
+
+    *{
+        padding-right: 1rem;
+    }
+}
