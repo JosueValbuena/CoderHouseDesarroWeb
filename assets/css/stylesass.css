@@ -14,7 +14,12 @@ html a:hover {
   text-decoration: underline;
 }
 
-.index-section {
+@media screen and (max-width: 576px) {
+  .container-index {
+    text-align: center;
+  }
+}
+.container-index .index-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -22,44 +27,88 @@ html a:hover {
   align-items: center;
   padding: 3rem 0;
 }
-.index-section img {
+.container-index .index-section img {
   width: 35rem;
   height: 30rem;
 }
-
-.index-section-dark {
+@media screen and (max-width: 576px) {
+  .container-index .index-section img {
+    width: 20rem;
+    height: 15rem;
+  }
+}
+.container-index .index-section-dark {
+  display: flex;
   background-color: #dc3545;
 }
-.index-section-dark a {
+@media screen and (max-width: 576px) {
+  .container-index .index-section-dark {
+    flex-direction: column-reverse;
+  }
+}
+.container-index .index-section-dark a {
   color: #e3e4db;
 }
-.index-section-dark img:hover {
+.container-index .index-section-dark img:hover {
   border: 5px solid #e3e4db;
 }
-
-.index-section-light {
+.container-index .index-section-light {
   background-color: #e3e4db;
 }
-.index-section-light a {
+.container-index .index-section-light a {
   color: #dc3545;
 }
-.index-section-light img:hover {
+.container-index .index-section-light img:hover {
   border: 5px solid #dc3545;
 }
 
-.main-perifericos {
+.container-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 3rem 10rem;
+  margin: 3rem 0;
 }
-.main-perifericos .card {
+
+@media screen and (max-width: 576px) {
+  .container-contact {
+    margin: 1rem 0;
+  }
+}
+.container-contact .div-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-contact .div-contacto div {
+  display: flex;
+  flex-direction: row;
+}
+.container-contact .div-contacto div * {
+  display: flex;
+  align-items: baseline;
+  padding: 0 0.2rem;
+}
+.container-contact form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
   width: 25rem;
+  margin: 0 1rem;
 }
-.main-perifericos .card:hover {
+.card:hover {
   transform: scale(1.01);
+}
+@media screen and (max-width: 576px) {
+  .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .hero-img {
