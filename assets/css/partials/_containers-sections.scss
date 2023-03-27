@@ -7,6 +7,55 @@
     margin: 3rem 0;
 }
 
+.container-servicios{
+    background-color: $bg-light;
+    display: grid;
+    grid-template-areas: 
+    "srvcimg1 srvctext1"
+    "srvctext2 srvcimg2";
+
+    .srvcimg1{
+        grid-area: srvcimg1;
+        img{
+            width: 100%;
+        }
+    }
+    .srvcimg2{
+        grid-area: srvcimg2;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin: auto;
+            width: 100%;
+        }
+    }
+    .srvctext1{
+        grid-area: srvctext1;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+    .srvctext2{
+        grid-area: srvctext2;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+
+    @include mobile{
+        grid-template-areas: 
+        "srvcimg1" 
+        "srvctext1"
+        "srvcimg2"
+        "srvctext2" 
+        ;
+
+        *{
+            margin: 0.5rem 0;
+        }
+    }
+}
+
 .container-contact{
     @include mobile{
         margin: 1rem 0;
